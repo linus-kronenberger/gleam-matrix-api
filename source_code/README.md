@@ -1,5 +1,10 @@
 # Server
 
+brew install gleam
+brew install erlang
+cd server
+gleam run
+
 [![Package Version](https://img.shields.io/hexpm/v/src)](https://hex.pm/packages/src)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/src/)
 
