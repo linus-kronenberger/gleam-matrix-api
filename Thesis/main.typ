@@ -17,7 +17,7 @@
   date: datetime.today(),
   glossary: glossary-entries, // displays the glossary terms defined in "glossary.typ"
   language: "de", // en, de
-  supervisor: (company: "John Appleseed", university: "Prof. Dr. Roland Schätzle"),
+  supervisor: (university: "Prof. Dr. Roland Schätzle"),
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Karlsruhe",
   university-short: "DHBW",
@@ -31,7 +31,7 @@
       - Generierung sämtlicher in der Arbeit vorkommender SQL-Statements
       - Generierung der Bash-Skripte zur Installation und Konfiguration des Systems (s. Anhang)
     ],
-  show-ai-usage-section: true,
+  show-ai-usage-section: false,
   // for more options check the package documentation (https://typst.app/universe/package/clean-dhbw)
 )
 
@@ -39,17 +39,7 @@
 
 = Einleitung
 
-#lorem(100)
-
-#lorem(80)
-
-#lorem(120)
-
-= Erläuterungen
-
-Im folgenden werden einige nützliche Elemente und Funktionen zum Erstellen von Typst-Dokumenten mit diesem Template erläutert.
-
-== Ausdrücke und Abkürzungen
+/* == Ausdrücke und Abkürzungen
 
 Verwende die `gls`-Funktion, um Ausdrücke aus dem Glossar einzufügen, die dann dorthin verlinkt werden. Ein Beispiel dafür ist:
 
@@ -143,3 +133,4 @@ Tabellen, Abbildungen und andere Elemente können mit einem Label in spitzen Kla
 #lorem(120)
 
 #lorem(80)
+ */
