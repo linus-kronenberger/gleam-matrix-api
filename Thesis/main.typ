@@ -2,22 +2,22 @@
 #import "glossary.typ": glossary-entries
 
 #show: clean-dhbw.with(
-  title: "Evaluation von Typst zur Erstellung einer Abschlussarbeit",
+  title: "Vergleichende Implementierung eines Matrix-Servers in Gleam",
   authors: (
-    (name: "Max Mustermann", student-id: "7654321", course: "TINF22B2", course-of-studies: "Informatik", company: (
-      (name: "ABC GmbH", post-code: "76131", city: "Karlsruhe")
+    (name: "Linus Kronenberger", student-id: "6323971", course: "TINF22B2", course-of-studies: "Informatik", company: (
+      (name: "SAP SE", post-code: "69190", city: "Walldorf", country: "Germany")
     )),
-    // (name: "Juan Pérez", student-id: "1234567", course: "TIM21", course-of-studies: "Mobile Computer Science", company: (
-    //   (name: "ABC S.L.", post-code: "08005", city: "Barcelona", country: "Spain")
-    // )),
+    (name: "Tom Sroka", student-id: "1234567", course: "TINF24B2", course-of-studies: "Computer Science", company: (
+       (name: "SAP SE", post-code: "69190", city: "Walldorf", country: "Germany")
+     )),
   ),
-  type-of-thesis: "Bachelorarbeit",
+  type-of-thesis: "Studienarbeit",
   at-university: false, // if true the company name on the title page and the confidentiality statement are hidden
   bibliography: bibliography("sources.bib"),
   date: datetime.today(),
   glossary: glossary-entries, // displays the glossary terms defined in "glossary.typ"
   language: "de", // en, de
-  supervisor: (company: "John Appleseed", university: "Prof. Dr. Daniel Düsentrieb"),
+  supervisor: (company: "John Appleseed", university: "Prof. Dr. Roland Schätzle"),
   university: "Duale Hochschule Baden-Württemberg",
   university-location: "Karlsruhe",
   university-short: "DHBW",
