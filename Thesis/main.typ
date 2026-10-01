@@ -4,10 +4,10 @@
 #show: clean-dhbw.with(
   title: "Vergleichende Implementierung eines Matrix-Servers in Gleam",
   authors: (
-    (name: "Linus Kronenberger", student-id: "6323971", course: "TINF22B2", course-of-studies: "Informatik", company: (
+    (name: "Linus Kronenberger", student-id: "6323971", course: "TINF24B2", course-of-studies: "Informatik", company: (
       (name: "SAP SE", post-code: "69190", city: "Walldorf", country: "Germany")
     )),
-    (name: "Tom Sroka", student-id: "1234567", course: "TINF24B2", course-of-studies: "Computer Science", company: (
+    (name: "Tom Sroka", student-id: "7337331", course: "TINF24B2", course-of-studies: "Informatik", company: (
        (name: "SAP SE", post-code: "69190", city: "Walldorf", country: "Germany")
      )),
   ),
