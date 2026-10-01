@@ -38,6 +38,14 @@
 // Edit this content to your liking
 
 = Einleitung
+Das Matrix Protokoll ist
+== Problemstellung
+== Methodik
+== Aufbau der Arbeit
+= Theoretische Grundlagen
+In dieser
+== Matrix Protokoll
+#figure(image("assets/diagrams/matrix-server-fundamentals.png"), caption: [Vereinfachte Darstellung des Matrix Servers])
 
 /* == Ausdrücke und Abkürzungen
 
