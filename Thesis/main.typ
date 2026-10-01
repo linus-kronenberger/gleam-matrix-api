@@ -7,7 +7,7 @@
     (name: "Linus Kronenberger", student-id: "6323971", course: "TINF24B2", course-of-studies: "Informatik", company: (
       (name: "SAP SE", post-code: "69190", city: "Walldorf", country: "Germany")
     )),
-    (name: "Tom Sroka", student-id: "7337331", course: "TINF24B2", course-of-studies: "Informatik", company: (
+    (name: "Tom Lennert Sroka", student-id: "7337331", course: "TINF24B2", course-of-studies: "Informatik", company: (
        (name: "SAP SE", post-code: "69190", city: "Walldorf", country: "Germany")
      )),
   ),
