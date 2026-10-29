@@ -1,29 +1,36 @@
 # Server
 
-brew install gleam
-brew install erlang
-cd server
+Dieser Ordner enthält den Gleam-HTTP-Prototyp für die Studienarbeit. Er verwendet
+Wisp und Mist und stellt derzeit Todo-Routen ohne Datenspeicherung bereit.
+
+## Voraussetzungen
+
+Benötigt werden Gleam und Erlang/OTP. Unter macOS:
+
+```sh
+brew install gleam erlang
+```
+
+## Starten
+
+Im Ordner `server/` ausführen:
+
+```sh
+gleam deps download
 gleam run
+```
 
-[![Package Version](https://img.shields.io/hexpm/v/src)](https://hex.pm/packages/src)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/src/)
+Der Server ist unter <http://localhost:8080/todos> erreichbar. Zum Beenden
+im Terminal `Ctrl+C` drücken.
+
+## Entwicklung
 
 ```sh
-gleam add src@1
-```
-```gleam
-import src
-
-pub fn main() -> Nil {
-  // TODO: An example of the project in use
-}
+gleam format --check src test
+gleam test
+gleam build
 ```
 
-Further documentation can be found at <https://hexdocs.pm/src>.
-
-## Development
-
-```sh
-gleam run   # Run the project
-gleam test  # Run the tests
-```
+Die Testsuite enthält bislang einen einfachen Beispieltest.
+Weitere Informationen zu den HTTP-Routen, zur Projektstruktur und zum Wiki
+stehen im [README des Repositorys](../README.md).
