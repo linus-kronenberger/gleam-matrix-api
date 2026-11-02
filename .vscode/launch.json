@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Gleam: Server debuggen",
+      "type": "erlang-edb",
+      "request": "launch",
+      "preLaunchTask": "Gleam: Debug-Quellpfade ergänzen",
+      "runInTerminal": {
+        "kind": "integrated",
+        "cwd": "${workspaceFolder}/server",
+        "args": [
+          "sh",
+          "-c",
+          "exec erl -noshell -pa build/dev/erlang/*/ebin -eval '{ok, _} = application:ensure_all_started(server), server:main().'"
+        ],
+        "env": { "PATH": "/opt/homebrew/bin:/usr/local/bin:${env:PATH}" }
+      },
+      "config": { "nameDomain": "shortnames", "timeout": 60 }
+    }
+  ]
+}
