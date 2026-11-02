@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "env": { "PATH": "/opt/homebrew/bin:/usr/local/bin:${env:PATH}" }
+  },
+  "tasks": [
+    {
+      "label": "Gleam: Server starten",
+      "type": "process",
+      "command": "gleam",
+      "args": ["run", "--target", "erlang", "--module", "server"],
+      "options": { "cwd": "${workspaceFolder}/server" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "focus": true, "panel": "dedicated" },
+      "runOptions": { "instanceLimit": 1 }
+    },
+    {
+      "label": "Gleam: Debug-Build bereinigen",
+      "type": "process",
+      "command": "gleam",
+      "args": ["clean"],
+      "options": { "cwd": "${workspaceFolder}/server" },
+      "problemMatcher": [],
+      "hide": true
+    },
+    {
+      "label": "Gleam: Server für Debugging bauen",
+      "type": "process",
+      "command": "gleam",
+      "args": ["build", "--target", "erlang"],
+      "options": {
+        "cwd": "${workspaceFolder}/server",
+        "env": { "ERL_COMPILER_OPTIONS": "[debug_info,beam_debug_info,beam_debug_stack]" }
+      },
+      "dependsOn": "Gleam: Debug-Build bereinigen",
+      "problemMatcher": []
+    },
+    {
+      "label": "Gleam: Debug-Quellpfade ergänzen",
+      "type": "process",
+      "command": "escript",
+      "args": ["${workspaceFolder}/.vscode/debug-source-paths.escript"],
+      "options": { "cwd": "${workspaceFolder}/server" },
+      "dependsOn": "Gleam: Server für Debugging bauen",
+      "problemMatcher": []
+    }
+  ]
+}

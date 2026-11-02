@@ -1,0 +1,6 @@
+{
+  "debug.allowBreakpointsEverywhere": true,
+  "terminal.integrated.env.osx": {
+    "PATH": "/opt/homebrew/bin:/usr/local/bin:${env:PATH}"
+  }
+}
